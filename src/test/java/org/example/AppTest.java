@@ -1,3 +1,4 @@
+/*
 package org.example;
 
 import io.javalin.Javalin;
@@ -10,9 +11,11 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
+*/
 /**
  * @author andreiserov
- */
+ *//*
+
 class AppTest {
 
     private static Javalin app;
@@ -47,3 +50,4 @@ class AppTest {
             .asEmpty();
     }
 }
+*/
