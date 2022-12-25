@@ -1,5 +1,5 @@
 curl -X 'POST' \
-'wiry-bikes-production.up.railway.app/contact' \
+'localhost:7000/contact' \
 -H 'accept: application/json' \
 -H 'Content-Type: application/json' \
 -d '{

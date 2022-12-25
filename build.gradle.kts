@@ -30,6 +30,8 @@ dependencies {
     implementation("org.glassfish.jaxb:jaxb-runtime:2.3.5")
     implementation("org.slf4j:slf4j-simple:2.0.6")
 
+    implementation("org.postgresql:postgresql:42.3.1")
+
     testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
     testImplementation("io.ebean:ebean-test:12.12.1")
     testImplementation("org.assertj:assertj-core:3.22.0")
