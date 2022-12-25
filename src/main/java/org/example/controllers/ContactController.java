@@ -13,9 +13,15 @@ public class ContactController {
 
     public static Handler create = ctx -> {
         Contact request = ctx.bodyAsClass(Contact.class);
+        request.setId(Contact.find.all().size() + 1L);
         request.save();
         ctx.status(HttpCode.CREATED);
+        ctx.json(request);
     };
+
+    public static void getAll(Context ctx) {
+        ctx.json(Contact.find.all());
+    }
 
     private static Long getId(Context ctx) {
         return Optional.ofNullable(ctx.pathParamAsClass("id", Long.class).getOrDefault(null))

@@ -18,6 +18,7 @@ public class Router {
            path("contact", () -> {
                post(ContactController.create);
                get("{id}", ContactController::getById);
+               get(ContactController::getAll);
            });
         });
     }
